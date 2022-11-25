@@ -1,0 +1,20 @@
+Entities:
+Show
+    - movie_id
+    - name
+    - startTime
+    - duration
+
+
+Screen
+    - screen_id
+    - seats: Array<BooleanArray>
+    - currentlyPlayedMovie: movie_id
+
+    + getAvailableSeats()
+
+User
+    - user_id
+
+
+UserSess

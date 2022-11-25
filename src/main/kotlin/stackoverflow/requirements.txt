@@ -1,0 +1,59 @@
+Requirements
+
+- Any non-member can search and view questions; to up-vote or add they have to become a member
+- members should be able to post new questions
+- members can answer any question
+- members can add comments to any question or answer
+- member can upvote comment, question and answer
+- member can flag a question, answer or comment, for imp problems to highlight to moderator -> Not MVP
+- any member can add a bounty to answer his question
+- member will earn badges for being helpful
+- members can vote to close a question, which moderator can close
+- members can add tags to their questions
+- moderator can close a question or undelete a deleted question
+- system should be able to list most frequent questions
+
+5 actors
+- admin
+- guest
+- member
+- moderator
+- system
+
+use cases
+- search question
+- add question with bounty and tags
+- add/ modify answer to any question
+- comment on questions and answers
+- moderator can close, delete and un-delete any question
+
+
+Class diagram
+- account
+
+- person has a account
+
+- user/admin/moderator is a person
+
+
+- question
+- id
+- title
+- desc
+- upvotes
+- views
+- status
+- addedBy
+- addedOn
+
+
+- answer
+- id
+- completeAns
+- viewCount
+- upvotes
+- isFlagged
+- status
+
+- comment
+

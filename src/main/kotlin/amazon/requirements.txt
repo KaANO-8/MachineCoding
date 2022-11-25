@@ -1,0 +1,35 @@
+Functional requirements:
+- user should be able to add new products
+- user should be able to search: by name and by category
+- user can search product but to buy they should have an account
+- user able to add/modify/remove products from cart
+- user can check-out to buy items in shopping cart
+- specify shipping address
+- user should be able to rate and add review of product
+- can cancel an order which is not shipped
+- user able to get notifications with order status
+- able to pay through cash, credit cards, etc.
+- track shipment - order status
+
+OrderStatus {
+    PENDING, SHIPPED, DELIVERED,
+}
+
+ProductCategory {
+    ELECTRONICS, HOUSEHOLD, MOBILES, PLASTICS
+}
+
+Product
+- productId
+- sellerId
+- amount
+- productCategory
+
+
+Order
+- orderId
+- list<Products>
+- paymentStatus
+- paymentType
+- orderStatus
+

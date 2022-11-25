@@ -1,0 +1,71 @@
+Functional Requirements:
+- support 2 players chess system
+- all international rules applied
+- each player is randomly assigned a side, either black or white
+- both players play alternate, white starts
+- a move cannot be cancelled or reverted
+- should maintain a log of all the moves
+- each side will have:
+    - 8 pawns
+    - 2 knights
+    - 2 bishops
+    - 2 rocks
+    - 1 queen
+    - 1 king
+- game can finish either is a checkmate from one side, forfeit or stalemate
+
+Class Diagram
+
+------------------>>>>>>>>>>> Enums <<<<<<<<<<<<<<----------
+AccountStatus
+- Active
+- Closed
+- cancelled
+- blacklisted
+
+GameStatus
+- active
+- Black win
+- white win
+- forfeit
+- stalemate
+- resignation
+
+----------------->>>>>>>>>> Player classes <<<<<<<<<<---------
+Account
+- accountID
+- username
+- password
+- accountStatus
+
+Person: Account
+- name
+- age
+
+Player: Person
+- playerId
+- side
+- exp
+
+------------->>>>>>>> Game <<<<<<-------------
+
+Game
+- List<Move>
+- currentTurn
+- status
+
+Box
+- x
+- y
+- piece (optional)
+
+Board
+- size
+- Grid<Box>
+
+Move
+- startBox
+- endBox
+- pieceKilled
+- Player
+- isCastlingMove

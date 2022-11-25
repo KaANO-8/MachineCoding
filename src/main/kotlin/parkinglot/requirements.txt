@@ -1,0 +1,9 @@
+ParkingLot
+ - n slots -
+
+Car
+    - vehicle_number
+    - color
+
+
+

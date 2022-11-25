@@ -1,0 +1,27 @@
+Requirements
+
+- member can add info about basic profile, experiences, education, skills, accomplishments
+- member should be able to search other members by name or by company
+- member should be able to send and accept invitation to connect
+- members can request recommendation from other members
+- system should show basic profile like view, total connections and total no. of search appearances
+- members should be able to create new post and share with connections
+- members should be able to post comments as well as like or dislike a post + share post
+- members should be able to send messages to other members
+- system should send a notification to a member whenever a new message or connection invitation or comment is posted
+- members should be able to create a page for company and add job postings
+- members should be able to create new groups or join any
+- members should be able to follow other members or companies
+
+actors
+- member
+- admin
+- system
+
+use cases
+- add/update profile info
+- search
+- follow/ unfollow company or member
+- send message
+- create post
+- like/dislike or comment

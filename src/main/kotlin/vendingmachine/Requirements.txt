@@ -1,0 +1,42 @@
+Problem statement
+- Design a vending machine that maintains an inventory or items, collects cash and dispense items based on user selection.
+
+Requirements:
+- Vending machine must keep track of inventory
+- A person should be able to insert cash and choose an item
+- A machine should confirm the inserted cash with the price of the selected item
+- The machine must display an error in case of insufficient cash or unavailable items
+- Finally, if all the above steps succeed then the user gets the selected item
+
+Use case diagram
+Actors
+- machine
+- user
+
+Use Cases
+- machine
+    - displays a list of items
+    - collects money and sums up
+    - dispense item
+    - return change
+    - show error
+
+- user
+    - insert money
+    - select item
+    - collect change
+    - collect item
+    - retry
+
+# Since the vending machine can be only in one state at a particular time, it's easy to model it as a transfer of states.
+
+Possible states:
+- Ready: idle state
+- Cash collected: machine has collected cash and waiting for user i/p
+- Dispense change: give back the change amount
+- Dispense item: dispense the item upon successful validation of entered cash
+- Txn cancelled: return cash back to user
+
+
+Link: https://javarevisited.blogspot.com/2016/06/design-vending-machine-in-java.html#axzz7jP9E8Nbk
+
